@@ -131,15 +131,14 @@
     
       
       <!-- Título com sombra mais suave -->
-      <h1 class="font-bebas text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white leading-none mb-6 animate-fadeDown drop-shadow-lg">
-        Você é
-        <span class="text-musgo block drop-shadow-xl">Montador Profissional?</span>
-      </h1>
-
+    <h1 class="font-bebas text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white leading-none mb-6 animate-fadeDown drop-shadow-lg">
+  Você é
+  <span class="text-orange-500 block drop-shadow-xl">Montador Profissional?</span>
+</h1>
       <!-- Descrição com melhor contraste -->
       <p class="text-white text-lg sm:text-xl max-w-3xl mx-auto mb-10 leading-relaxed animate-fadeDown delay-100 drop-shadow-md">
         Você monta com qualidade, tem referências e quer ser pago de acordo com o que entrega? 
-        A <span class="text-musgo font-semibold drop-shadow-lg">NF Móveis Planejados</span> está formando sua rede de montadores parceiros. 
+    A <span class="text-orange-500 font-semibold drop-shadow-lg">NF Móveis Planejados</span> está formando sua rede de montadores parceiros.
         Trabalhe com quem respeita o profissional.
       </p>
 
@@ -287,24 +286,61 @@
     </div>
 
     <!-- STEPPER -->
-    <div class="flex justify-center items-center mb-12">
-      <div class="step-item active flex flex-col items-center relative" id="step-1">
-        <div class="w-9 h-9 rounded-full bg-musgo text-white flex items-center justify-center text-sm font-bold relative z-10">1</div>
-        <div class="text-xs font-semibold text-gray-500 mt-2 uppercase tracking-wider">Dados Pessoais</div>
+<div class="flex justify-center items-center mb-16">
+  <!-- Step 1 - Ativo -->
+  <div class="step-item active flex flex-col items-center relative" id="step-1">
+    <div class="relative">
+      <div class="w-12 h-12 rounded-full bg-gradient-to-br from-musgo to-petroleo text-white flex items-center justify-center text-base font-bold shadow-lg shadow-musgo/30 ring-4 ring-musgo/20">
+        1
       </div>
-      <div class="step-item flex flex-col items-center relative" id="step-2">
-        <div class="w-9 h-9 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center text-sm font-bold relative z-10">2</div>
-        <div class="text-xs font-semibold text-gray-400 mt-2 uppercase tracking-wider">Experiência</div>
-      </div>
-      <div class="step-item flex flex-col items-center relative" id="step-3">
-        <div class="w-9 h-9 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center text-sm font-bold relative z-10">3</div>
-        <div class="text-xs font-semibold text-gray-400 mt-2 uppercase tracking-wider">Documentos</div>
-      </div>
-      <div class="step-item flex flex-col items-center relative" id="step-4">
-        <div class="w-9 h-9 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center text-sm font-bold relative z-10">4</div>
-        <div class="text-xs font-semibold text-gray-400 mt-2 uppercase tracking-wider">Termos</div>
+      <div class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-gradient-to-r from-musgo to-petroleo rounded-full"></div>
+    </div>
+    <div class="text-sm font-medium text-musgo mt-4">Dados Pessoais</div>
+    <div class="text-xs text-gray-400 mt-0.5">Etapa 1/4</div>
+  </div>
+
+  <!-- Connector 1-2 -->
+  <div class="w-16 h-0.5 bg-gradient-to-r from-musgo/50 to-gray-200 mx-2"></div>
+
+  <!-- Step 2 -->
+  <div class="step-item flex flex-col items-center relative" id="step-2">
+    <div class="relative">
+      <div class="w-12 h-12 rounded-full bg-white border-2 border-gray-200 text-gray-400 flex items-center justify-center text-base font-bold hover:border-musgo/30 transition-all duration-300">
+        2
       </div>
     </div>
+    <div class="text-sm font-medium text-gray-400 mt-4">Experiência</div>
+    <div class="text-xs text-gray-300 mt-0.5">Etapa 2/4</div>
+  </div>
+
+  <!-- Connector 2-3 -->
+  <div class="w-16 h-0.5 bg-gray-200 mx-2"></div>
+
+  <!-- Step 3 -->
+  <div class="step-item flex flex-col items-center relative" id="step-3">
+    <div class="relative">
+      <div class="w-12 h-12 rounded-full bg-white border-2 border-gray-200 text-gray-400 flex items-center justify-center text-base font-bold hover:border-musgo/30 transition-all duration-300">
+        3
+      </div>
+    </div>
+    <div class="text-sm font-medium text-gray-400 mt-4">Documentos</div>
+    <div class="text-xs text-gray-300 mt-0.5">Etapa 3/4</div>
+  </div>
+
+  <!-- Connector 3-4 -->
+  <div class="w-16 h-0.5 bg-gray-200 mx-2"></div>
+
+  <!-- Step 4 -->
+  <div class="step-item flex flex-col items-center relative" id="step-4">
+    <div class="relative">
+      <div class="w-12 h-12 rounded-full bg-white border-2 border-gray-200 text-gray-400 flex items-center justify-center text-base font-bold hover:border-musgo/30 transition-all duration-300">
+        4
+      </div>
+    </div>
+    <div class="text-sm font-medium text-gray-400 mt-4">Termos</div>
+    <div class="text-xs text-gray-300 mt-0.5">Etapa 4/4</div>
+  </div>
+</div>
 
     <form id="formCadastro" novalidate>
       <!-- ETAPA 1: DADOS PESSOAIS -->
@@ -401,149 +437,191 @@
       </div>
 
       <!-- ETAPA 2: EXPERIÊNCIA -->
-      <div class="etapa hidden" id="etapa-2">
-        <h3 class="text-xl font-bold text-petroleo mb-2">Sua Experiência Profissional</h3>
-        <p class="text-gray-500 text-sm mb-6">Quanto mais detalhar, melhor serão os projetos que você receberá.</p>
+  <div class="etapa hidden" id="etapa-2">
+  <h3 class="text-xl font-bold text-petroleo mb-2">Sua Experiência Profissional</h3>
+  <p class="text-gray-500 text-sm mb-6">Quanto mais detalhar, melhor serão os projetos que você receberá.</p>
 
-        <!-- Nível de experiência -->
-        <div class="mb-4">
-          <label class="text-xs font-bold text-gray-700 uppercase tracking-wider mb-3 block">Nível de Experiência <span class="text-red-500">*</span></label>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-3" id="nivelGrid">
-            <label class="border-2 border-musgo bg-musgo/5 rounded-xl p-4 cursor-pointer sel" onclick="selNivel(this, 'simples')">
-              <input type="radio" name="nivel" value="simples" class="hidden" checked>
-              <div class="font-bold text-sm mb-1">🔨 Iniciante</div>
-              <div class="text-lg font-black text-musgo">R$800</div>
-              <div class="text-xs text-gray-500 mt-1">Projetos simples, até 2 anos</div>
-            </label>
-            <label class="border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-musgo" onclick="selNivel(this, 'medio_complexo')">
-              <input type="radio" name="nivel" value="medio_complexo" class="hidden">
-              <div class="font-bold text-sm mb-1">⚡ Experiente</div>
-              <div class="text-lg font-black text-musgo">R$1.500–2.800</div>
-              <div class="text-xs text-gray-500 mt-1">Projetos médios/complexos, 2–5 anos</div>
-            </label>
-            <label class="border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-musgo" onclick="selNivel(this, 'luxo')">
-              <input type="radio" name="nivel" value="luxo" class="hidden">
-              <div class="font-bold text-sm mb-1">🏆 Especialista</div>
-              <div class="text-lg font-black text-musgo">R$5.000+</div>
-              <div class="text-xs text-gray-500 mt-1">Super luxo, 5+ anos</div>
-            </label>
-          </div>
+  <!-- Nível de experiência -->
+  <div class="mb-6">
+    <label class="text-xs font-bold text-gray-700 uppercase tracking-wider mb-3 block">Nível de Experiência <span class="text-red-500">*</span></label>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="nivelGrid">
+      
+      <!-- Card 1 - Iniciante / Simples -->
+      <label class="nivel-opt relative bg-white border-2 border-musgo rounded-2xl p-5 cursor-pointer overflow-hidden group hover:shadow-lg transition-all duration-300 sel" onclick="selNivel(this)">
+        <!-- Barrinha superior decorativa -->
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-musgo to-petroleo"></div>
+        <input type="radio" name="nivel" value="simples" class="hidden" checked>
+        <div class="text-center">
+          <div class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Iniciante</div>
+          <div class="text-3xl font-black text-musgo mb-1">R$300</div>
+          <div class="text-sm text-gray-600 mb-2">🔨 Projetos simples</div>
+          <div class="text-xs text-gray-500">Quarto ou cozinha básica • 1 ambiente • Até 2 anos</div>
         </div>
+      </label>
+      
+      <!-- Card 2 - Experiente / Médio -->
+      <label class="nivel-opt relative bg-white border-2 border-gray-200 rounded-2xl p-5 cursor-pointer overflow-hidden group hover:border-musgo hover:shadow-lg transition-all duration-300" onclick="selNivel(this)">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-musgo to-petroleo scale-x-0 group-hover:scale-x-100 transition-transform"></div>
+        <input type="radio" name="nivel" value="medio_complexo" class="hidden">
+        <div class="text-center">
+          <div class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Experiente</div>
+          <div class="text-3xl font-black text-musgo mb-1">R$600–900</div>
+          <div class="text-sm text-gray-600 mb-2">⚡ Projetos médios/complexos</div>
+          <div class="text-xs text-gray-500">Cozinha completa, closet, integrados • 2–3 ambientes • 2–5 anos</div>
+        </div>
+      </label>
+      
+      <!-- Card 3 - Especialista / Luxo -->
+      <label class="nivel-opt relative bg-white border-2 border-gray-200 rounded-2xl p-5 cursor-pointer overflow-hidden group hover:border-musgo hover:shadow-lg transition-all duration-300" onclick="selNivel(this)">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-musgo to-petroleo scale-x-0 group-hover:scale-x-100 transition-transform"></div>
+        <input type="radio" name="nivel" value="luxo" class="hidden">
+        <div class="text-center">
+          <div class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Especialista</div>
+          <div class="text-3xl font-black text-musgo mb-1">R$1.200+</div>
+          <div class="text-sm text-gray-600 mb-2">🏆 Super luxo</div>
+          <div class="text-xs text-gray-500">Projetos premium completos • 3+ ambientes • 5+ anos</div>
+        </div>
+      </label>
+    </div>
+  </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-          <div class="flex flex-col gap-1">
-            <label class="text-xs font-bold text-gray-700 uppercase tracking-wider">Anos de Experiência <span class="text-red-500">*</span></label>
-            <select id="anos_exp" class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-musgo focus:ring-2 focus:ring-musgo/10 outline-none transition" required>
-              <option value="">Selecione...</option>
-              <option>Menos de 1 ano</option>
-              <option>1 a 2 anos</option>
-              <option>2 a 5 anos</option>
-              <option>5 a 10 anos</option>
-              <option>Mais de 10 anos</option>
-            </select>
-          </div>
-          <div class="flex flex-col gap-1">
-            <label class="text-xs font-bold text-gray-700 uppercase tracking-wider">Possui CNPJ?</label>
-            <select id="cnpj_status" class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-musgo focus:ring-2 focus:ring-musgo/10 outline-none transition">
-              <option value="nao">Não, trabalho como autônomo</option>
-              <option value="sim">Sim, tenho MEI/empresa</option>
-            </select>
-          </div>
-        </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+    <div class="flex flex-col gap-1">
+      <label class="text-xs font-bold text-gray-700 uppercase tracking-wider">Anos de Experiência <span class="text-red-500">*</span></label>
+      <select id="anos_exp" class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-musgo focus:ring-2 focus:ring-musgo/10 outline-none transition" required>
+        <option value="">Selecione...</option>
+        <option>Menos de 1 ano</option>
+        <option>1 a 2 anos</option>
+        <option>2 a 5 anos</option>
+        <option>5 a 10 anos</option>
+        <option>Mais de 10 anos</option>
+      </select>
+    </div>
+    <div class="flex flex-col gap-1">
+      <label class="text-xs font-bold text-gray-700 uppercase tracking-wider">Possui CNPJ?</label>
+      <select id="cnpj_status" class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-musgo focus:ring-2 focus:ring-musgo/10 outline-none transition">
+        <option value="nao">Não, trabalho como autônomo</option>
+        <option value="sim">Sim, tenho MEI/empresa</option>
+      </select>
+    </div>
+  </div>
 
-        <div class="hidden mb-4" id="cnpjCampo">
-          <div class="flex flex-col gap-1">
-            <label class="text-xs font-bold text-gray-700 uppercase tracking-wider">Número do CNPJ</label>
-            <input type="text" id="cnpj" placeholder="00.000.000/0000-00" maxlength="18" class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-musgo focus:ring-2 focus:ring-musgo/10 outline-none transition">
-          </div>
-        </div>
+  <div class="hidden mb-4" id="cnpjCampo">
+    <div class="flex flex-col gap-1">
+      <label class="text-xs font-bold text-gray-700 uppercase tracking-wider">Número do CNPJ</label>
+      <input type="text" id="cnpj" placeholder="00.000.000/0000-00" maxlength="18" class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-musgo focus:ring-2 focus:ring-musgo/10 outline-none transition">
+    </div>
+  </div>
 
-        <!-- Especialidades -->
-        <div class="mb-4">
-          <label class="text-xs font-bold text-gray-700 uppercase tracking-wider block mb-2">Especialidades <span class="text-red-500">*</span></label>
-          <p class="text-xs text-gray-500 mb-3">Marque tudo que você sabe fazer bem</p>
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-3" id="especGrid">
-            <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
-              <input type="checkbox" value="cozinha" class="hidden">
-              <div class="w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
-              <span class="text-sm">🍳 Cozinhas</span>
-            </label>
-            <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
-              <input type="checkbox" value="quarto" class="hidden">
-              <div class="w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
-              <span class="text-sm">🛏 Quartos</span>
-            </label>
-            <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
-              <input type="checkbox" value="closet" class="hidden">
-              <div class="w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
-              <span class="text-sm">👗 Closets</span>
-            </label>
-            <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
-              <input type="checkbox" value="sala" class="hidden">
-              <div class="w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
-              <span class="text-sm">🛋 Salas</span>
-            </label>
-            <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
-              <input type="checkbox" value="banheiro" class="hidden">
-              <div class="w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
-              <span class="text-sm">🚿 Banheiros</span>
-            </label>
-            <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
-              <input type="checkbox" value="escritorio" class="hidden">
-              <div class="w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
-              <span class="text-sm">💼 Escritórios</span>
-            </label>
-            <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
-              <input type="checkbox" value="home_theater" class="hidden">
-              <div class="w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
-              <span class="text-sm">📺 Home Theater</span>
-            </label>
-            <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
-              <input type="checkbox" value="area_gourmet" class="hidden">
-              <div class="w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
-              <span class="text-sm">🍖 Área Gourmet</span>
-            </label>
-            <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
-              <input type="checkbox" value="alto_padrao" class="hidden">
-              <div class="w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
-              <span class="text-sm">💎 Alto Padrão</span>
-            </label>
-          </div>
-        </div>
 
-        <!-- Ferramentas -->
-        <div class="flex flex-col gap-1 mb-4">
-          <label class="text-xs font-bold text-gray-700 uppercase tracking-wider">Ferramentas que Possui <span class="text-red-500">*</span></label>
-          <textarea id="ferramentas" placeholder="Ex: Parafusadeira Bosch, furadeira de impacto, nível a laser, esquadro, etc." class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-musgo focus:ring-2 focus:ring-musgo/10 outline-none transition w-full h-24" required></textarea>
-        </div>
+<!-- Especialidades -->
+<div class="mb-4">
+  <label class="text-xs font-bold text-gray-700 uppercase tracking-wider block mb-2">Especialidades <span class="text-red-500">*</span></label>
+  <p class="text-xs text-gray-500 mb-3">Marque tudo que você sabe fazer bem</p>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-3" id="especGrid">
+    <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
+      <input type="checkbox" value="cozinha" class="hidden">
+      <div class="espec-check w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
+      <span class="text-sm">🍳 Cozinhas</span>
+    </label>
+    <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
+      <input type="checkbox" value="quarto" class="hidden">
+      <div class="espec-check w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
+      <span class="text-sm">🛏 Quartos</span>
+    </label>
+    <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
+      <input type="checkbox" value="closet" class="hidden">
+      <div class="espec-check w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
+      <span class="text-sm">👗 Closets</span>
+    </label>
+    <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
+      <input type="checkbox" value="sala" class="hidden">
+      <div class="espec-check w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
+      <span class="text-sm">🛋 Salas</span>
+    </label>
+    <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
+      <input type="checkbox" value="banheiro" class="hidden">
+      <div class="espec-check w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
+      <span class="text-sm">🚿 Banheiros</span>
+    </label>
+    <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
+      <input type="checkbox" value="escritorio" class="hidden">
+      <div class="espec-check w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
+      <span class="text-sm">💼 Escritórios</span>
+    </label>
+    <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
+      <input type="checkbox" value="home_theater" class="hidden">
+      <div class="espec-check w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
+      <span class="text-sm">📺 Home Theater</span>
+    </label>
+    <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
+      <input type="checkbox" value="area_gourmet" class="hidden">
+      <div class="espec-check w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
+      <span class="text-sm">🍖 Área Gourmet</span>
+    </label>
+    <label class="espec-opt flex items-center gap-2 border-2 border-gray-200 rounded-lg p-3 cursor-pointer hover:border-musgo" onclick="toggleEspec(this)">
+      <input type="checkbox" value="alto_padrao" class="hidden">
+      <div class="espec-check w-5 h-5 border-2 border-gray-200 rounded flex items-center justify-center text-xs"></div>
+      <span class="text-sm">💎 Alto Padrão</span>
+    </label>
+  </div>
+</div>
+<style>
+  /* Impede a seleção de texto em elementos clicáveis */
+  .cursor-pointer, 
+  .espec-opt,
+  button,
+  a,
+  label,
+  [onclick] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Garante que o clique não selecione texto */
+  .no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+</style>
 
-        <!-- Referências -->
-        <div class="flex flex-col gap-1 mb-4">
-          <label class="text-xs font-bold text-gray-700 uppercase tracking-wider">Referências Profissionais</label>
-          <textarea id="referencias" placeholder="Nome e telefone de clientes, empresas ou colegas que podem atestar seu trabalho..." class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-musgo focus:ring-2 focus:ring-musgo/10 outline-none transition w-full h-20"></textarea>
-        </div>
+  <!-- Ferramentas -->
+  <div class="flex flex-col gap-1 mb-4">
+    <label class="text-xs font-bold text-gray-700 uppercase tracking-wider">Ferramentas que Possui <span class="text-red-500">*</span></label>
+    <textarea id="ferramentas" placeholder="Ex: Parafusadeira Bosch, furadeira de impacto, nível a laser, esquadro, etc." class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-musgo focus:ring-2 focus:ring-musgo/10 outline-none transition w-full h-24" required></textarea>
+  </div>
 
-        <!-- Disponibilidade -->
-        <div class="flex flex-col gap-1 mb-6">
-          <label class="text-xs font-bold text-gray-700 uppercase tracking-wider">Disponibilidade de Horários <span class="text-red-500">*</span></label>
-          <select id="disponibilidade" class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-musgo focus:ring-2 focus:ring-musgo/10 outline-none transition" required>
-            <option value="">Selecione...</option>
-            <option>Tempo integral (segunda a sábado)</option>
-            <option>Meio período (manhã)</option>
-            <option>Meio período (tarde)</option>
-            <option>Fins de semana apenas</option>
-            <option>Flexível — combinar conforme agenda</option>
-          </select>
-        </div>
+  <!-- Referências -->
+  <div class="flex flex-col gap-1 mb-4">
+    <label class="text-xs font-bold text-gray-700 uppercase tracking-wider">Referências Profissionais</label>
+    <textarea id="referencias" placeholder="Nome e telefone de clientes, empresas ou colegas que podem atestar seu trabalho..." class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-musgo focus:ring-2 focus:ring-musgo/10 outline-none transition w-full h-20"></textarea>
+  </div>
 
-        <!-- Navegação -->
-        <div class="flex justify-between items-center pt-6 border-t border-gray-200">
-          <button type="button" class="px-8 py-3 border-2 border-gray-200 rounded-lg font-bold text-gray-500 hover:border-musgo hover:text-musgo transition-all" onclick="voltar(2)">← Voltar</button>
-          <button type="button" class="bg-musgo hover:bg-petroleo text-white px-8 py-3 rounded-lg font-bold shadow-md hover:shadow-lg transition-all" onclick="avancar(2)">
-            Próximo: Documentos →
-          </button>
-        </div>
-      </div>
+  <!-- Disponibilidade -->
+  <div class="flex flex-col gap-1 mb-6">
+    <label class="text-xs font-bold text-gray-700 uppercase tracking-wider">Disponibilidade de Horários <span class="text-red-500">*</span></label>
+    <select id="disponibilidade" class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-musgo focus:ring-2 focus:ring-musgo/10 outline-none transition" required>
+      <option value="">Selecione...</option>
+      <option>Tempo integral (segunda a sábado)</option>
+      <option>Meio período (manhã)</option>
+      <option>Meio período (tarde)</option>
+      <option>Fins de semana apenas</option>
+      <option>Flexível — combinar conforme agenda</option>
+    </select>
+  </div>
+
+  <!-- Navegação -->
+  <div class="flex justify-between items-center pt-6 border-t border-gray-200">
+    <button type="button" class="px-8 py-3 border-2 border-gray-200 rounded-lg font-bold text-gray-500 hover:border-musgo hover:text-musgo transition-all" onclick="voltar(2)">← Voltar</button>
+    <button type="button" class="bg-musgo hover:bg-petroleo text-white px-8 py-3 rounded-lg font-bold shadow-md hover:shadow-lg transition-all" onclick="avancar(2)">
+      Próximo: Documentos →
+    </button>
+  </div>
+</div>
 
       <!-- ETAPA 3: DOCUMENTOS -->
       <div class="etapa hidden" id="etapa-3">
@@ -758,32 +836,70 @@
   });
 
   // ─── SELETORES VISUAIS ────────────────────────────────────
-  function selNivel(el, val) {
-    document.querySelectorAll('.nivel-opt').forEach(o => {
-      o.classList.remove('border-musgo', 'bg-musgo/5', 'sel');
-      o.classList.add('border-gray-200');
+  function selNivel(element) {
+    // Remove a seleção de todos os labels
+    document.querySelectorAll('.nivel-opt').forEach(opt => {
+      opt.classList.remove('border-musgo', 'bg-musgo/5', 'sel');
+      opt.classList.add('border-gray-200');
+      // Remove a barrinha visível
+      const barra = opt.querySelector('.absolute.top-0.left-0.right-0.h-1');
+      if (barra) {
+        barra.classList.remove('bg-gradient-to-r', 'from-musgo', 'to-petroleo');
+        barra.classList.add('scale-x-0');
+      }
     });
-    el.classList.add('border-musgo', 'bg-musgo/5', 'sel');
-    el.classList.remove('border-gray-200');
-  }
-
-  function toggleEspec(el) {
-    el.classList.toggle('sel');
-    el.classList.toggle('border-musgo');
-    el.classList.toggle('bg-musgo/5');
     
-    const check = el.querySelector('.espec-check');
-    if (el.classList.contains('sel')) {
-      check.classList.add('bg-musgo', 'border-musgo', 'text-white');
-      check.innerHTML = '✓';
-    } else {
-      check.classList.remove('bg-musgo', 'border-musgo', 'text-white');
-      check.innerHTML = '';
+    // Adiciona a seleção ao elemento clicado
+    element.classList.add('border-musgo', 'bg-musgo/5', 'sel');
+    element.classList.remove('border-gray-200');
+    
+    // Ativa a barrinha do elemento selecionado
+    const barra = element.querySelector('.absolute.top-0.left-0.right-0.h-1');
+    if (barra) {
+      barra.classList.add('bg-gradient-to-r', 'from-musgo', 'to-petroleo');
+      barra.classList.remove('scale-x-0');
     }
     
-    el.querySelector('input').checked = el.classList.contains('sel');
+    // Marca o radio button correspondente
+    const radio = element.querySelector('input[type="radio"]');
+    if (radio) {
+      radio.checked = true;
+    }
   }
 
+  // Função para toggle das especialidades
+function toggleEspec(element) {
+  // Previne a seleção de texto
+  event.preventDefault();
+  
+  // Verifica se o elemento existe
+  if (!element) return;
+  
+  // Alterna as classes
+  element.classList.toggle('sel');
+  element.classList.toggle('border-musgo');
+  element.classList.toggle('bg-musgo/5');
+  
+  // Encontra e atualiza o check
+  const check = element.querySelector('.espec-check');
+  if (check) {
+    if (element.classList.contains('sel')) {
+      check.classList.add('bg-musgo', 'border-musgo', 'text-white');
+      check.textContent = '✓';
+    } else {
+      check.classList.remove('bg-musgo', 'border-musgo', 'text-white');
+      check.textContent = '';
+    }
+  }
+  
+  // Encontra e atualiza o checkbox
+  const checkbox = element.querySelector('input[type="checkbox"]');
+  if (checkbox) {
+    checkbox.checked = element.classList.contains('sel');
+  }
+  
+  return false;
+}
   // ─── UPLOAD DOCS ──────────────────────────────────────────
   function docUploaded(docId, input) {
     const docItem = document.getElementById(docId);
@@ -799,25 +915,47 @@
 
   function updateStepper(etapa) {
     for (let i = 1; i <= 4; i++) {
-      const s = document.getElementById('step-' + i);
-      const circle = s.querySelector('.w-9');
-      const label = s.querySelector('.text-xs');
+      const step = document.getElementById('step-' + i);
+      if (!step) continue;
       
-      circle.classList.remove('bg-musgo', 'bg-green-600', 'bg-gray-200');
-      label.classList.remove('text-musgo', 'text-green-600', 'text-gray-500', 'text-gray-400');
+      const circle = step.querySelector('.w-12');
+      const title = step.querySelector('.font-medium');
+      const subtitle = step.querySelector('.text-xs');
+      const connector = i < 4 ? step.nextElementSibling : null;
       
       if (i < etapa) {
-        circle.classList.add('bg-green-600', 'text-white');
-        circle.innerHTML = '✓';
-        label.classList.add('text-green-600');
+        // Steps concluídos
+        if (circle) {
+          circle.className = 'w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-green-600 text-white flex items-center justify-center text-base font-bold shadow-lg shadow-green-500/30 ring-4 ring-green-500/20';
+          circle.innerHTML = '✓';
+        }
+        if (title) title.className = 'text-sm font-medium text-green-600 mt-4';
+        if (subtitle) subtitle.className = 'text-xs text-green-400 mt-0.5';
+        if (connector && connector.classList.contains('w-16')) {
+          connector.className = 'w-16 h-0.5 bg-gradient-to-r from-green-500 to-green-400 mx-2';
+        }
       } else if (i === etapa) {
-        circle.classList.add('bg-musgo', 'text-white');
-        circle.innerHTML = i;
-        label.classList.add('text-musgo');
+        // Step atual
+        if (circle) {
+          circle.className = 'w-12 h-12 rounded-full bg-gradient-to-br from-musgo to-petroleo text-white flex items-center justify-center text-base font-bold shadow-lg shadow-musgo/30 ring-4 ring-musgo/20';
+          circle.innerHTML = i;
+        }
+        if (title) title.className = 'text-sm font-medium text-musgo mt-4';
+        if (subtitle) subtitle.className = 'text-xs text-gray-400 mt-0.5';
+        if (connector && connector.classList.contains('w-16')) {
+          connector.className = 'w-16 h-0.5 bg-gradient-to-r from-musgo/50 to-gray-200 mx-2';
+        }
       } else {
-        circle.classList.add('bg-gray-200', 'text-gray-500');
-        circle.innerHTML = i;
-        label.classList.add('text-gray-400');
+        // Steps futuros
+        if (circle) {
+          circle.className = 'w-12 h-12 rounded-full bg-white border-2 border-gray-200 text-gray-400 flex items-center justify-center text-base font-bold hover:border-musgo/30 transition-all duration-300';
+          circle.innerHTML = i;
+        }
+        if (title) title.className = 'text-sm font-medium text-gray-400 mt-4';
+        if (subtitle) subtitle.className = 'text-xs text-gray-300 mt-0.5';
+        if (connector && connector.classList.contains('w-16')) {
+          connector.className = 'w-16 h-0.5 bg-gray-200 mx-2';
+        }
       }
     }
   }
@@ -947,6 +1085,11 @@
       document.getElementById('sucesso').style.display = 'block';
       window.scrollTo({ top: document.getElementById('cadastro').offsetTop, behavior: 'smooth' });
     }, 1500);
+  });
+
+  // Inicializar o stepper na etapa 1
+  document.addEventListener('DOMContentLoaded', function() {
+    updateStepper(1);
   });
 </script>
 </body>
